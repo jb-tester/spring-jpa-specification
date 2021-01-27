@@ -8,8 +8,9 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SpringJpaDemoApplication implements CommandLineRunner {
-        @Autowired
+    @Autowired
     ApplicationContext ctx;
+
     public static void main(String[] args) {
         SpringApplication.run(SpringJpaDemoApplication.class, args);
     }

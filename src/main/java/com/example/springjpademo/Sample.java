@@ -1,6 +1,8 @@
 package com.example.springjpademo;
 
-import javax.persistence.*;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import java.util.Objects;
 
 /**
@@ -11,7 +13,7 @@ import java.util.Objects;
  */
 @Entity
 public class Sample extends AbstractBaseEntity {
-    
+
     private Integer version;
     private String sample;
     private String color;

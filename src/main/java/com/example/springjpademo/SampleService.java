@@ -18,13 +18,14 @@ public class SampleService {
     @Autowired
     private SampleRepo sampleRepo;
 
-    public void displayRedSamples(){
+    public void displayRedSamples() {
         for (Sample sample : sampleRepoWithSpecification.findAll(SampleSpecification.colorSpec("red"))) {
             System.out.println(sample.toString());
         }
     }
-   public void displayFirstSample(){
-       System.out.println(sampleRepo.idQuery(1L).toString());
-   } 
-    
+
+    public void displayFirstSample() {
+        System.out.println(sampleRepo.idQuery(1L).toString());
+    }
+
 }
